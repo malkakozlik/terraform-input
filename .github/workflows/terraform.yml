@@ -7,6 +7,9 @@ on:
     #     description: 'branch name'
     #     required: true
 
+env:
+  TF_VAR_subscription_id: ${{secrets.SUBSCRIPTION_ID}}
+
 # env:
 #   ARM_SUBSCRIPTION_ID: ${{secrets.SUBSCRIPTION_ID}}
 #   ARM_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
