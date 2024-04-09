@@ -41,7 +41,7 @@ jobs:
           for directory in ${DIRECTORIES[@]}; do
             cd ${directory} || exit 1
             terraform init -input=true
-            terraform plan -out=tfplan -input=true
-            terraform apply -input=true tfplan
+            terraform plan  -input=true
+            terraform apply -input=true 
             cd ..  
           done  
